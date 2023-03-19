@@ -18,7 +18,18 @@ const Navbar = (props: Props) => {
                     <img src={Logo} alt="logo" />
 
                      {/*RIGHT SIDE*/}
-                     <div className={`${flexBetween} w-full`}></div>
+                     <div className={`${flexBetween} w-full`}>
+                        <div className={`${flexBetween} gap-8 text-sm`}>
+                            <p>Home</p>
+                            <p>Benefits</p>
+                            <p>Our Classes</p>
+                            <p>Contact Us</p>
+                        </div>
+                        <div>
+                            <p>Sign In</p>
+                            <button>Become a Member</button>
+                        </div>
+                     </div>
                 </div>
             </div>
             
@@ -26,3 +37,5 @@ const Navbar = (props: Props) => {
 
     </nav>
 }
+
+export default Navbar
