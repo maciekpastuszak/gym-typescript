@@ -25,3 +25,5 @@ const Link = ({
     </AnchorLink>
   )
 }
+
+export default Link;
