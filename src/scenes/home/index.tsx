@@ -48,12 +48,26 @@ const Home = ({ setSelectedPage }: Props) => {
                     </AnchorLink>
                 </div>
             </div>
-            {/* IMAGE */}
+        {/* IMAGE */}
         <div>
-
+            <img src={HomePageGraphic} alt="home-page-graphic" />
         </div>
 
         </div>
+
+        {/* SPONSORS */}
+
+        {isAboveMediumScreens && (
+            <div>
+                <div>
+                    <div>
+                        <img src={SponsorRedbull} alt="redbull-sponsor" />
+                        <img src={SponsorFortune} alt="fortune-sponsor" />
+                        <img src={SponsorForbes} alt="forbes-sponsor" />
+                    </div>
+                </div>
+            </div>
+        )}
     </section>
   )
 }
