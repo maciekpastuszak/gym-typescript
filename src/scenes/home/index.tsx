@@ -30,13 +30,13 @@ const Home = ({ setSelectedPage }: Props) => {
                             <img src={HomePageText} alt="home-page-text" />
                         </div>
                     </div>
-                    <p>
+                    <p className="mt-8 text-sm md:text-start">
                         Unrivaled Gym. Unparalleled Training Fitness Classes. World Class Studios to get the Body Shapes That you Dream of.. Get Your Dream Body Now.
                     </p>
                 </div>
 
                 {/* ACTIONS */}
-                <div>
+                <div className="mt-8 flex items-center gp-8">
                     <ActionButton setSelectedPage={setSelectedPage}>
                     Join Now
                     </ActionButton>
@@ -49,7 +49,7 @@ const Home = ({ setSelectedPage }: Props) => {
                 </div>
             </div>
         {/* IMAGE */}
-        <div>
+        <div className="flex basis-3/5 justify-center md:z-10 md:ml-40 md:mt-16 md:justify-items-end">
             <img src={HomePageGraphic} alt="home-page-graphic" />
         </div>
 
@@ -58,16 +58,16 @@ const Home = ({ setSelectedPage }: Props) => {
         {/* SPONSORS */}
 
         {isAboveMediumScreens && (
-            <div>
-                <div>
-                    <div>
-                        <img src={SponsorRedbull} alt="redbull-sponsor" />
-                        <img src={SponsorFortune} alt="fortune-sponsor" />
-                        <img src={SponsorForbes} alt="forbes-sponsor" />
-                    </div>
-                </div>
+        <div className="h-[150px] w-full bg-primary-100 py-10">
+          <div className="mx-auto w-5/6">
+            <div className="flex w-3/5 items-center justify-between gap-8">
+              <img alt="redbull-sponsor" src={SponsorRedbull} />
+              <img alt="forbes-sponsor" src={SponsorForbes} />
+              <img alt="fortune-sponsor" src={SponsorFortune} />
             </div>
-        )}
+          </div>
+        </div>
+      )}
     </section>
   )
 }
