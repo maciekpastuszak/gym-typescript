@@ -85,10 +85,27 @@ const Benefits = ({setSelectedPage}: Props) => {
             {/* DESCRIPTION */}
             <div>
                 {/* TITLE */}
-
+                <div className="relative">
+                    <div className="before:absolute before:-20-20 before:-left-20 before:z-[1] before:content-abstractwaves">
+                        <div>
+                            <HText>
+                                MILLIONS OF HAPPY MEMBERS GETTING {" "}
+                                <span className="text-primary-500">FIT</span>
+                            </HText>
+                        </div>
+                    </div>
+                </div>
                 {/* DESCRIPTION */}
-
+                    <div>
+                        <p className="my-5">Donec tincidunt nec sem sed tincidunt. Curabitur nec ullamcorper metus. Quisque id leo imperdiet dui molestie tincidunt sed a est. Nulla gravida eleifend lorem non mattis. Ut hendrerit non arcu vitae malesuada. Integer sit amet semper lorem. Nam sollicitudin augue a pulvinar laoreet. Duis sed tincidunt nisl. Phasellus vestibulum euismod tristique. Vivamus in tellus vitae orci porta porttitor at vel neque. Praesent tincidunt molestie odio. Aenean volutpat odio venenatis rutrum feugiat. Donec ullamcorper sem pulvinar massa condimentum scelerisque. Mauris auctor finibus mauris a ornare. Ut a purus ut leo varius blandit. Nullam at vehicula ante</p>
+                        <p className="my-5">Ut eget aliquet magna, at pulvinar ex. Suspendisse malesuada egestas arcu id aliquet. Suspendisse massa nisl, suscipit eu ex vitae, consequat mollis risus. Nullam dui ligula, sollicitudin sit amet elementum nec, sollicitudin ac ipsum. Fusce vitae nunc quis nulla tempor vestibulum sed non nisl.</p>
+                    </div>
                 {/* BUTTON */}
+                <div className="relative mt-16">
+                    <div className="before:absolute before:-bottom-20 before:right-40 before:z-[-1] before:content-sparkles ">
+
+                    </div>
+                </div>
             </div>
         </div>
         </motion.div>
