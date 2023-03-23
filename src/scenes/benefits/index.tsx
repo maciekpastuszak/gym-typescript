@@ -77,6 +77,20 @@ const Benefits = ({setSelectedPage}: Props) => {
                 />
             ))}
         </motion.div>
+
+        {/* GRAPHICS AND DESCRIPTION */}
+        <div>
+            {/* GRAPHIC */}
+            <img src="" alt="" />
+            {/* DESCRIPTION */}
+            <div>
+                {/* TITLE */}
+
+                {/* DESCRIPTION */}
+
+                {/* BUTTON */}
+            </div>
+        </div>
         </motion.div>
     </section>
   )
