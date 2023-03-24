@@ -8,6 +8,8 @@ import image5 from '@assets/image5.png';
 import image6 from '@assets/image6.png';
 import { motion } from 'framer-motion';
 
+
+
 type Props = {
     setSelectedPage:(value: SelectedPage) => void;
 }
@@ -33,7 +35,13 @@ const OurClasses = ({ setSelectedPage } : Props) => {
             <p className="py-5">Mauris rutrum metus vitae quam sodales aliquam. Nunc gravida nisi eu massa semper, fringilla porttitor leo suscipit. Vestibulum quis felis ullamcorper, bibendum dolor sed, tristique nibh. Nunc mattis turpis eget quam sagittis, ut ultricies ante accumsan. Donec vulputate, ligula blandit pharetra dignissim, velit tortor luctus augue, ornare commodo arcu lectus vel lorem.</p>
         </div>
         </motion.div>
-        
+        <div className="mt-10 h-[353px] w-full overflow-x-auto overflow-y/hidden">
+            <ul className="w-[2800px] whitespace-nowrap">
+                {classes.map((item, index) => {
+                    <Class />
+                })}
+            </ul>
+        </div>
     </motion.div>
     </section>;
 };
