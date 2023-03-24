@@ -1,3 +1,4 @@
+import HText from '@/shared/HText';
 import { SelectedPage } from '@/shared/types'
 import image1 from '@assets/image1.png';
 import image2 from '@assets/image2.png';
@@ -27,8 +28,12 @@ const OurClasses = ({ setSelectedPage } : Props) => {
             visible: { opacity: 1, x: 0},
         }}
         >
-
+        <div className="md:w-3/5">
+            <HText>OUR CLASSES</HText>
+            <p className="py-5">Mauris rutrum metus vitae quam sodales aliquam. Nunc gravida nisi eu massa semper, fringilla porttitor leo suscipit. Vestibulum quis felis ullamcorper, bibendum dolor sed, tristique nibh. Nunc mattis turpis eget quam sagittis, ut ultricies ante accumsan. Donec vulputate, ligula blandit pharetra dignissim, velit tortor luctus augue, ornare commodo arcu lectus vel lorem.</p>
+        </div>
         </motion.div>
+        
     </motion.div>
     </section>;
 };
