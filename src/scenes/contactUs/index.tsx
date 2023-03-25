@@ -9,6 +9,20 @@ type Props = {
 }
 
 const ContactUs = ({setSelectedPage}: Props) => {
+  
+    const {
+        register,
+        trigger,
+        formState: { errors }
+    } = useForm();
+
+  const onSubmit = async (e: any) => {
+    const isValid = await trigger();
+    if (!isValid) {
+        e.preventDefault();
+    }
+  }
+
   return <section>
     <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.ContactUs)}>
         {/* HEADER */}
@@ -43,7 +57,14 @@ const ContactUs = ({setSelectedPage}: Props) => {
                 visible: { opacity: 1, y: 0},
             }}
             >
+                <form
+                    target="_blank"
+                    onSubmit={onSubmit}
+                    action="https://formsubmit.com/hud78d9329j8dhhd20d0dh2h2d0h"
+                    method="POST"
+                >
 
+                </form>
             </motion.div>
         </div>
     </motion.div>
