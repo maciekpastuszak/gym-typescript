@@ -30,6 +30,22 @@ const ContactUs = ({setSelectedPage}: Props) => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
             </p>
         </motion.div>
+        {/* FORM AND IMAGE */}
+        <div className="mt-10 justify-between gap-8 md:flex">
+            <motion.div
+            className="mt-10 basis-3/5 md:mt-0"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5}}
+            transition={{ duration: 0.5}}
+            variants={{
+                hidden: { opacity: 0, x: -50 },
+                visible: { opacity: 1, x: 0},
+            }}
+            >
+
+            </motion.div>
+        </div>
     </motion.div>
   </section>
 }
