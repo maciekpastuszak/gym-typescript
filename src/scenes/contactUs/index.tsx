@@ -9,7 +9,8 @@ type Props = {
 }
 
 const ContactUs = ({setSelectedPage}: Props) => {
-  
+    
+    const inputStyles = `w-full rounded-lg bg-primary-300 px-5 py-3 plcaeholder-white`;
     const {
         register,
         trigger,
@@ -63,7 +64,9 @@ const ContactUs = ({setSelectedPage}: Props) => {
                     action="https://formsubmit.com/hud78d9329j8dhhd20d0dh2h2d0h"
                     method="POST"
                 >
-
+                    <input 
+                    type="text"
+                    className={inputStyles}   />
                 </form>
             </motion.div>
         </div>
