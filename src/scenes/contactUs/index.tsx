@@ -10,7 +10,7 @@ type Props = {
 
 const ContactUs = ({setSelectedPage}: Props) => {
     
-    const inputStyles = `w-full mt-5 rounded-lg bg-primary-300 px-5 py-3 plcaeholder-white`;
+    const inputStyles = `w-full mt-5 rounded-lg bg-primary-300 px-5 py-3 placaholder-white`;
     const {
         register,
         trigger,
@@ -96,9 +96,10 @@ const ContactUs = ({setSelectedPage}: Props) => {
                         </p>
                     )}
 
-                <input 
-                    type="text"
+                <textarea 
                     className={inputStyles} 
+                    rows={4}
+                    cols={50}
                     placeholder="MESSAGE"
                     {...register("name", {
                         required: true,
