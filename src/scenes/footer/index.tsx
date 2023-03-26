@@ -10,8 +10,17 @@ const Footer = () => {
             </p>
             <p>C Evogym All Rights Reserved</p>
         </div>
-        <div></div>
-        <div></div>
+        <div className="mt-16 basis-1/4 md:mt-0">
+            <h4 className="font-bold">Links</h4>
+            <p className="my-5">Massa orci senectus</p>
+            <p className="my-5">Et gravida id et etiam</p>
+            <p className="my-5">Ullam corper vivamus</p>
+        </div>
+        <div className="mt-16 basis-1/4 md:mt-0">
+            <h4 className="font-bold">Contact Us</h4>
+            <p className="my-5">Massa orci senectus</p>
+            <p className="my-5">(333)123-76-80</p>
+        </div>
     </div>
   </footer>;
 };
