@@ -10,7 +10,7 @@ type Props = {
 
 const ContactUs = ({setSelectedPage}: Props) => {
     
-    const inputStyles = `w-full mt-5 rounded-lg bg-primary-300 px-5 py-3 placaholder-white`;
+    const inputStyles = `w-full mb-5 rounded-lg bg-primary-300 px-5 py-3 placaholder-white`;
     const {
         register,
         trigger,
@@ -131,7 +131,9 @@ const ContactUs = ({setSelectedPage}: Props) => {
                     visible: { opacity: 1, y: 0},
                 }}
                 >
-
+                <div className="md:before:content-evolvetext w-full before:absolute before:-bottom-20 before:-right-10 before:z-[-1]">
+                    <img src={ContactUsPageGraphic} alt="ContactUsPageGraphic" className="w-full"/>
+                </div>
             </motion.div>
         </div>
     </motion.div>
