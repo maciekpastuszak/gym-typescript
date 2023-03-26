@@ -64,7 +64,7 @@ const ContactUs = ({setSelectedPage}: Props) => {
                     action="https://formsubmit.com/hud78d9329j8dhhd20d0dh2h2d0h"
                     method="POST"
                 >
-                    <input 
+                <input 
                     type="text"
                     className={inputStyles} 
                     placeholder="NAME"
@@ -95,6 +95,28 @@ const ContactUs = ({setSelectedPage}: Props) => {
                             {errors.email.type === "pattern" && "Invalid email address"}
                         </p>
                     )}
+
+                <input 
+                    type="text"
+                    className={inputStyles} 
+                    placeholder="MESSAGE"
+                    {...register("name", {
+                        required: true,
+                        maxLength: 2000,
+                    })}
+                    />
+                    {errors.message && (
+                        <p className="mt-1 text-primary-500">
+                            {errors.message.type === "required" && "This field is required"}
+                            {errors.message.type === "maxLength" && "Max length is 2000 char"}
+                        </p>
+                    )}
+                    <button
+                    type="submit"
+                    className="mt-5 rounded-lg bg-secondary-500 px-20 py-3 transition duration-500 hover:text-white"
+                    >
+                        SUBMIT
+                    </button>
                 </form>
             </motion.div>
         </div>
