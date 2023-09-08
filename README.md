@@ -12,6 +12,6 @@ It is a modern designed webpage based on React with TypeScript and Tailwind CSS.
 - Framer motions for animations
 - Tailwind heroicons
 
-### [Live Site](https://evogym.maciejpastuszak.pl/)
+### [Live Site](https://evo-gym.maciejpastuszak.pl/)
 
 ![EvoGym](https://i.ibb.co/rQ80bR6/Evogym.png)
