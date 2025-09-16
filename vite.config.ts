@@ -7,5 +7,13 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: [{find: "@", replacement: path.resolve(__dirname, "src")}]
-  }
+  },
+  build: {
+    // generate manifest.json in outDir
+    manifest: true,
+    rollupOptions: {
+      // overwrite default .html entry
+      input: './src/main.tsx',
+    },
+  },
 })
