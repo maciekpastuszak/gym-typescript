@@ -5,7 +5,6 @@ import path from "path";
 export default defineConfig(({ mode }) => ({
   plugins: [
     react({
-      // Disable React Fast Refresh when building for production
       fastRefresh: mode !== "production",
     }),
   ],
